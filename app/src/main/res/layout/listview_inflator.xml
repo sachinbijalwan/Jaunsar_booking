@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_inflator"
+    android:layout_width="match_parent"
+    android:layout_height="200dip"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:gravity="top"
+    android:layout_margin="2dp"
+    android:divider="#000"
+    android:showDividers="middle"
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        android:divider="#000"
+        android:showDividers="middle"
+
+        >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_margin="2dp"
+            android:divider="#000"
+            android:showDividers="middle"
+
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:gravity="top"
+                android:text="@string/start_time_second"
+
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/time_start"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:onClick="text_click"
+                android:text="@string/default_long"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:text="@string/end_time_second" />
+
+            <TextView
+                android:id="@+id/time_end"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:text="@string/default_long"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="vertical"
+            android:divider="#000"
+            android:showDividers="middle"
+            >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:text="@string/start_place_second" />
+
+            <TextView
+                android:id="@+id/place_start"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="text_click"
+                android:text="@string/default_long"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:text="@string/other_places_second" />
+
+            <TextView
+                android:id="@+id/place_end"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/default_long"
+                android:textSize="17sp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/contact"
+            android:gravity="center"
+            android:onClick="contacting"/>
+    </LinearLayout>
+
+</LinearLayout>

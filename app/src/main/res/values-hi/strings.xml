@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Jaunsar_Booking</string>
+
+    <string name="introduction">गाड़ियां यहां बूक करे</string>
+    <string name="start_time">यहा वह दिन डाले जब से आपको गाड़ी बूक करनी है</string>
+    <string name="end_time">यहा वह दिन डाले जब तक आपको गाड़ी बूक करनी है</string>
+    <string name="start_date">यहा वह दिन डाले जब से आपको गाड़ी बूक करनी है</string>
+    <string name="end_date">यहा वह दिन डाले जब तक आपको गाड़ी बूक करनी है</string>
+    <string name="pickup_location">नीचे वह जगह डालें जहा से आपको गाड़ी चाहिये</string>
+    <string name="other_locations">नीचे वह जगह डालें जहा आप गाड़ी ले जाएंगे</string>
+    <string name="Book">गाड़ी बूक करे</string>
+    <string name="Go">गाड़ी बूक करे</string>
+    <string name="default_long">This is the default long string set for this app</string>
+    <string name="start_time_second">बुकिंग की शुरू होने की तारीक</string>
+    <string name="end_time_second">बुकिंग की खतम होने की तारीक</string>
+    <string name="start_place_second">बुकिंग की शुरु होने की जगह</string>
+    <string name="other_places_second">बुकिंग की खतम होने की जगह</string>
+    <string name="contact">बात करे</string>
+    <string name="phone_number">नीचे अपना फोन नंबर डालें</string>
+    <string name="first_driver">ड्राइवर</string>
+    <string name="first_book_a_cab">गाड़ी बूक करे</string>
+    <string name="choice">अगर आप ड्राइवर है तो ड्राइवर p क्लिक करे वरना दूसरे बटन पे क्लिक करें</string>
+    <string name="menu_request_delete">अपनी रिक्वेस्ट हटाए</string>
+    <string name="menu_info">और जानकारी</string>
+    <string name="set_date">तारीक सेट करे</string>
+</resources>
