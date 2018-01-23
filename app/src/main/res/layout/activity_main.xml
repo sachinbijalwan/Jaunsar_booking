@@ -32,29 +32,40 @@
             android:text="@string/introduction"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            />
 
         <TextView
             android:id="@+id/date_start"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/start_date" />
+            android:text="@string/start_date"
+            android:textAlignment="center"/>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <View android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
             <Button
                 android:id="@+id/date"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onClick"
-                android:text="@string/set_date" />
+                android:text="@string/set_date"
+                android:background="@drawable/button_selector"/>
+            <View android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
 
         </LinearLayout>
 
@@ -63,22 +74,33 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/end_date" />
+            android:text="@string/end_date"
+            android:textAlignment="center"/>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
+            android:weightSum="3"
             android:orientation="horizontal">
 
+            <View android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
             <Button
                 android:id="@+id/date2"
-                android:layout_width="match_parent"
+
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onClick"
-                android:text="@string/set_date" />
+                android:text="@string/set_date"
+                android:background="@drawable/button_selector"
+                />
+            <View android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -87,7 +109,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/pickup_location" />
+            android:text="@string/pickup_location"
+            android:textAlignment="center"/>
 
         <EditText
             android:id="@+id/pickup_button"
@@ -100,7 +123,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/other_locations" />
+            android:text="@string/other_locations"
+            android:textAlignment="center"/>
 
         <EditText
             android:id="@+id/drop_button"
@@ -113,7 +137,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/phone_number" />
+            android:text="@string/phone_number"
+            android:textAlignment="center"/>
         <EditText
             android:id="@+id/phone_number"
             android:layout_width="match_parent"
@@ -127,7 +152,8 @@
             android:layout_height="0dp"
             android:layout_weight="2"
             android:onClick="StartAnotherActivity"
-            android:text="@string/Book" />
+            android:text="@string/Book"
+            android:background="@drawable/button_selector"/>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

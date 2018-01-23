@@ -33,10 +33,15 @@ public class MainActivity extends AppCompatActivity implements BackgroundWorker.
     int[] startdate;
     int[] enddate;
     String input="input";
+
     boolean startd=false,endd=false,phone=false,stored_value=false;
     SharedPreferences mBooking;
     SharedPreferences.Editor editor;
     Toolbar toolbar;
+
+    String data_confirmation="data has been entered";
+    //"डाटा डल चुका है"
+    String data_not_confirmation="data has not been entered";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mBooking = this.getSharedPreferences("Requests", Context.MODE_PRIVATE);
@@ -161,13 +166,13 @@ public class MainActivity extends AppCompatActivity implements BackgroundWorker.
 
         }
         else if(stored_value){
-            Toast.makeText(this,"आपने पहले ही एक रिक्वेस्ट डाल रखी है. नयी रिक्वेस्ट के लिए उसे ऊपर दिए 3 बिन्दु वाले बटन पे क्लिक करके हटाएं.",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"You have already entered the request. Click on delete request to add a new request",Toast.LENGTH_LONG).show();
         }
         else if(!checkvariables()){
-            Toast.makeText(this,"आपने सारी चीज़ें नी भरी है",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"All fields are not entered",Toast.LENGTH_LONG).show();
         }
         else if(!isValidPhoneNumber(s)){
-            Toast.makeText(this,"फोन नंबर गलत है",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Phone number is wrong",Toast.LENGTH_LONG).show();
         }
         else{
             Toast.makeText(this,"unknown error",Toast.LENGTH_LONG).show();
@@ -230,7 +235,7 @@ public class MainActivity extends AppCompatActivity implements BackgroundWorker.
             editor.apply();
             //.d("Deb", value + output);
             if (!output2.equals("डाटा डल चुका है")) {
-                output2 = "डाटा डाला नहीं गया. कृपया दोबारा डालें";
+                output2 = "Data not entered. Please enter once again";
             }
             Toast.makeText(this, output2, Toast.LENGTH_LONG).show();
         }

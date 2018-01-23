@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Jaunsar_Booking</string>
 
-    <string name="introduction">Book your cabs here to travel anywhere in Jaunsar Bawar</string>
+    <string name="introduction">Book your cabs here to travel anywhere</string>
     <string name="start_time">Start time of your journey</string>
     <string name="end_time">End time of your journey</string>
     <string name="start_date">Time from which you need your four wheeler</string>
@@ -23,5 +23,5 @@
     <string name="first_book_a_cab">Book a cab</string>
     <string name="choice">if you are a driver then click driver otherwise click second button</string>
     <string name="set_date">Set Date</string>
-    <string name="about_me" translatable="false">This app is created by sachin Bijalwaqn</string>
+    <string name="about_me" translatable="false">This app is created by sachin Bijalwan</string>
 </resources>

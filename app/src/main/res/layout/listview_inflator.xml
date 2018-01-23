@@ -135,7 +135,8 @@
             android:layout_height="match_parent"
             android:text="@string/contact"
             android:gravity="center"
-            android:onClick="contacting"/>
+            android:onClick="contacting"
+            android:background="@drawable/button_selector"/>
     </LinearLayout>
 
 </LinearLayout>
